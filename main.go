@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	"server/router"
 )
@@ -14,5 +15,7 @@ func main() {
 	// http.Handle("/", fs)
 	fmt.Println("Starting server on the port 5000...")
 
-	log.Fatal(http.ListenAndServe(":5000", r))
+	PORT := os.Getenv("DB_COLLECTION_NAME")
+
+	log.Fatal(http.ListenAndServe(PORT, r))
 }
