@@ -13,9 +13,9 @@ func main() {
 	r := router.Router()
 	// fs := http.FileServer(http.Dir("build"))
 	// http.Handle("/", fs)
-	fmt.Println("Starting server on the port 5000...")
+	
+	PORT := os.Getenv("PORT")
+	fmt.Println("Starting server on the port %v..",PORT)
 
-	PORT := os.Getenv("DB_COLLECTION_NAME")
-
-	log.Fatal(http.ListenAndServe(PORT, r))
+	log.Fatal(http.ListenAndServe(":" + PORT, r))
 }
