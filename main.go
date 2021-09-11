@@ -15,7 +15,7 @@ func main() {
 	// http.Handle("/", fs)
 	
 	PORT := os.Getenv("PORT")
-	fmt.Println("Starting server on the port %v..",PORT)
+	fmt.Println("Starting server on the port ", PORT)
 
 	log.Fatal(http.ListenAndServe(":" + PORT, r))
 }
