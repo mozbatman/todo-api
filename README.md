@@ -1,5 +1,7 @@
 ## Go Todo App
 
+[![Go Reference](https://pkg.go.dev/badge/golang.org/x/example.svg)](https://pkg.go.dev/golang.org/x/example)
+
 #### Example:
 
 Here is the backend of the todo app I made for React.
