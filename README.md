@@ -3,14 +3,18 @@
 #### Example:
 
 Here is the backend of the todo app I made for React.
+
 React Link : https://github.com/mozbatman/react-todo
+
 Link : https://go-todo-appm.herokuapp.com/
 
 ## Installation and Setup Instructions
 
 #### Example:  
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+Clone down this repository. You will need `go` installed globally on your machine.  
+
+Installer go link : https://golang.org/doc/install
 
 Installation:
 
